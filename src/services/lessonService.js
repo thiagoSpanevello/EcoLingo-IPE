@@ -128,7 +128,7 @@ export const LESSON_DATA = {
             id: 'plants_ex13',
             type: EXERCISE_TYPES.COMPLETE_SENTENCE,
             question: 'Como os cactos armazenam água para sobreviver à seca?',
-            options: ['Nas folhas', 'No caule fofinho', 'Nas flores', 'Nas raízes aéreas'],
+            options: ['Nas folhas', 'No caule fofinho', 'Nas flores', 'Nas raíces aéreas'],
             correct: 1,
           },
           {
@@ -143,6 +143,33 @@ export const LESSON_DATA = {
             question: 'As plantas que vivem em ambientes muito secos são chamadas de ___.',
             options: ['aquáticas', 'xerófitas', 'parasitas', 'rasteiras'],
             correct: 1,
+          },
+        ],
+      },
+      {
+        id: 'plants_6',
+        title: 'Curiosidades sobre plantas',
+        xpReward: 10,
+        exercises: [
+          {
+            id: 'plants_ex16',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'O bambu é a planta lenhosa que cresce mais rápido no mundo, podendo crescer até quanto em um único dia?',
+            options: ['90 cm', '2 cm', '1 m'],
+            correct: 0,
+          },
+          {
+            id: 'plants_ex17',
+            type: EXERCISE_TYPES.TRUE_FALSE,
+            question: 'Algumas plantas, ao serem tocadas, podem se fechar e murchar imediatamente.',
+            correct: true,
+          },
+          {
+            id: 'plants_ex18',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'Plantas ____ “ouvir” vibrações acústicas, como o som de água corrente ou até música.',
+            options: ['conseguem', 'não conseguem'],
+            correct: 0,
           },
         ],
       },
@@ -289,6 +316,41 @@ export const LESSON_DATA = {
           },
         ],
       },
+      {
+        id: 'trees_6',
+        title: 'Arborização Urbana',
+        xpReward: 10,
+        exercises: [
+          {
+            id: 'trees_ex16',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'O que deve ser considerado antes de plantar uma árvore na cidade?',
+            options: [
+              'Nada',
+              'O custo da muda',
+              'A espécie indicada, o espaço disponível, o tamanho da cova, a adubação e o desenvolvimento futuro da árvore'
+            ],
+            correct: 2,
+          },
+          {
+            id: 'trees_ex17',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'Por que plantar árvores na cidade?',
+            options: [
+              'Para acabar com o desmatamento',
+              'Para ficar bonito',
+              'Para melhorar o ambiente, o conforto térmico, a qualidade do ar e a paisagem da cidade'
+            ],
+            correct: 2,
+          },
+          {
+            id: 'trees_ex18',
+            type: EXERCISE_TYPES.TRUE_FALSE,
+            question: 'Devemos escolher espécies exóticas para plantar em vez de espécies nativas.',
+            correct: false,
+          },
+        ],
+      },
     ],
   },
   fruits_veggies: {
@@ -429,6 +491,37 @@ export const LESSON_DATA = {
             question: 'Restos de vegetais que estragaram podem ir para a ___ virar adubo.',
             options: ['composteira', 'pia', 'lixeira reciclável', 'dispensa'],
             correct: 0,
+          },
+        ],
+      },
+      {
+        id: 'fruits_6',
+        title: 'Frutas em Santa Catarina',
+        xpReward: 10,
+        exercises: [
+          {
+            id: 'fruits_ex16',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'Algumas frutas nativas de Santa Catarina são:',
+            options: [
+              'Jabuticaba, pitanga, araçá, guabiroba e butiá',
+              'Laranja, mamão, maçã e morango',
+              'Uva, maracujá, manga e limão'
+            ],
+            correct: 0,
+          },
+          {
+            id: 'fruits_ex17',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'Qual fruta nativa é rica em vitamina C?',
+            options: ['Araçá', 'Laranja', 'Tangerina', 'Kiwi'],
+            correct: 0,
+          },
+          {
+            id: 'fruits_ex18',
+            type: EXERCISE_TYPES.TRUE_FALSE,
+            question: 'Santa Catarina é responsável pela metade da produção de maçã do Brasil.',
+            correct: true,
           },
         ],
       },
@@ -715,6 +808,41 @@ export const LESSON_DATA = {
             question: 'Comprar produtos de produtores locais diminui a poluição do ___ de transporte.',
             options: ['navio', 'frete / caminhão', 'avião', 'trem'],
             correct: 1,
+          },
+        ],
+      },
+      {
+        id: 'sustainability_6',
+        title: 'Educação Ambiental',
+        xpReward: 10,
+        exercises: [
+          {
+            id: 'sustainability_ex16',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'Quantas árvores são poupadas se 1 tonelada de papel for reciclada?',
+            options: ['Nenhuma', '1000 árvores', '1 árvore', 'Entre 14 e 17 árvores'],
+            correct: 3,
+          },
+          {
+            id: 'sustainability_ex17',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'Por que se ensina educação ambiental nas escolas?',
+            options: [
+              'Porque ela contribui para melhorar os hábitos sustentáveis das famílias e da comunidade',
+              'Porque ela incentiva hábitos sedentários'
+            ],
+            correct: 0,
+          },
+          {
+            id: 'sustainability_ex18',
+            type: EXERCISE_TYPES.MULTIPLE_CHOICE,
+            question: 'O que é consumo consciente?',
+            options: [
+              'Consumir tudo de uma única vez',
+              'Nunca consumir nada',
+              'Consumir com responsabilidade, pensando nos impactos ambientais, sociais e econômicos'
+            ],
+            correct: 2,
           },
         ],
       },
