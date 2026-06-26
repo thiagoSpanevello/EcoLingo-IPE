@@ -12,7 +12,6 @@ export function OnboardingScreen({ navigation }) {
   const handleStart = () => {
     if (!name.trim()) return;
     dispatch(setUser({ name: name.trim() }));
-    navigation.replace('MainTabs');
   };
 
   return (

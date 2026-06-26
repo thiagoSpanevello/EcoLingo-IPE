@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Text } from 'react-native';
+import { useSelector } from 'react-redux'; // 👈 Importa o useSelector para ler o estado
 
 import { OnboardingScreen } from '../screens/Onboarding/OnboardingScreen';
 import { HomeScreen }       from '../screens/Home/HomeScreen';
@@ -30,12 +31,27 @@ function Tabs() {
 }
 
 export function AppNavigator() {
+  const userState = useSelector((state) => state.user);
+
+  // 🔍 LOGS DE DEPURAÇÃO - Olhe o terminal quando o app abrir:
+  console.log("=== VERIFICAÇÃO DE ESTADO ===");
+  console.log("Nome carregado no Redux:", userState?.name);
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Onboarding" component={OnboardingScreen} />
-        <Stack.Screen name="MainTabs"   component={Tabs} />
-        <Stack.Screen name="Lesson"     component={LessonScreen} />
+        {userState?.name && userState.name.trim() !== '' ? (
+          <>
+            <Stack.Screen name="MainTabs" component={Tabs} />
+            <Stack.Screen name="Lesson"   component={LessonScreen} />
+          </>
+        ) : (
+          <>
+            <Stack.Screen name="Onboarding" component={OnboardingScreen} />
+            <Stack.Screen name="MainTabs"   component={Tabs} />
+            <Stack.Screen name="Lesson"     component={LessonScreen} />
+          </>
+        )}
       </Stack.Navigator>
     </NavigationContainer>
   );
